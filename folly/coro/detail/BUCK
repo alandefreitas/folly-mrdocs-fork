@@ -1,0 +1,15 @@
+load("@fbsource//tools/build_defs/dirsync:fb_dirsync_cpp_library.bzl", "fb_dirsync_cpp_library")
+
+oncall("fbcode_entropy_wardens_folly")
+
+### this line is a hint for source control merge
+
+fb_dirsync_cpp_library(
+    name = "pick_task_wrapper",
+    headers = ["PickTaskWrapper.h"],
+    use_raw_headers = True,
+    exported_deps = [
+        "//folly:portability",
+        "//folly/lang:safe_alias_fwd",
+    ],
+)
