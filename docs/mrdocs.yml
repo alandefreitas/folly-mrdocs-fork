@@ -149,14 +149,4 @@ exclude-patterns:
 
 multipage: true
 generator: adoc
-auto-function-metadata: false
 non-standard-attributes: false
-warnings: true
-warn-if-undocumented: true
-warn-no-paramdoc: true
-warn-unnamed-param: true
-warn-if-undoc-enum-val: true
-warn-if-doc-error: true
-warn-broken-ref: true
-warn-if-undocumented-namespace: true
-warn-no-brief: true
